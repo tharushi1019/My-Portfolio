@@ -1,0 +1,130 @@
+@import "../../vars.css";
+
+.container {
+    color: var(--color-text);
+    margin-top: 79px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.skills {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.skillImageContainer {
+    background-color: var(--color-secondary);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+}
+
+.skillImageContainer img {
+    width: 75px;
+}
+
+.skillImageContainer:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    box-shadow: inset 0 0 10px hsl(0, 0%, 100%);
+}
+
+.skill p {
+    font-size: 25px;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+}
+
+.history {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.historyItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: #19376d;
+    background: linear-gradient(
+        90deg,
+        #19376d 0%,
+        rgba(25, 55, 109, 0.5) 100%
+    );
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.historyItem:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    box-shadow: inset 0 0 10px hsl(0, 0%, 100%);
+}
+
+.historyItem img {
+    width: 50px;
+}
+
+.historyItemDetails {
+    font-family: var(--font-roboto);
+}
+
+.historyItemDetails h3 {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.historyItemDetails p {
+    font-size: 11px;
+    font-weight: 100;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 34px;
+    }
+
+    .skills {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .history {
+        width: 100%;
+        gap: 9px;
+    }
+}

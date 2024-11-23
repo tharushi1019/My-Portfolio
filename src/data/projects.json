@@ -1,0 +1,28 @@
+[
+  {
+      "title": "Lesson Planner System - Java",
+      "imageSrc": "projects/lesson-planner.png",
+      "description": "A Java-based lesson planner system using MVC architecture and MySQL. The system features a user login interface, lesson management, teacher management, and CRUD functionalities.",
+      "skills": ["Java", "MySQL", "Swing", "MVC"],
+      "demo": "https://youtu.be/SFTkt60iBoQ?si=vV6z-O1GXgtfQLVO",
+      "source": "https://github.com/tharushi1019/ITBIN-2211-0202"
+  },
+  
+  {
+      "title": "Bakery Shop Website (Group)",
+      "imageSrc": "projects/bakery-website.png",
+      "description": "A responsive bakery shop website with user authentication, CRUD operations, and data management. The website was built with HTML, CSS, JavaScript, and PHP, with MySQL for backend support.",
+      "skills": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "demo": "https://youtu.be/2rAPrxtL0Sg",
+      "source": "https://www.github.com/tharushi1019/bakery-shop"
+  },
+  
+  {
+      "title": "Daily Mirror Website Redesign (Group)",
+      "imageSrc": "projects/daily-mirror-redesign.PNG",
+      "description": "A redesign of the Daily Mirror website focusing on improving UI/UX design, navigation, and user interaction. Implemented a modern, user-friendly layout while enhancing the responsiveness of the website.",
+      "skills": ["UI/UX Design", "HTML", "CSS", "JavaScript"],
+      "demo": "https://drive.google.com/file/d/1shw4XGK8OqtAKoWu3tQ1TEPkIoLDo79t/view?usp=sharing",
+      "source": "https://www.figma.com/design/dR8owZfqFdsR9pYQPl5dDr/Redesign-DailyMirror.lk-Website?node-id=0-1&t=OfUL343zn0vdwUa1-1"
+  }
+]

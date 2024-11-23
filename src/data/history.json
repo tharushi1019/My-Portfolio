@@ -1,0 +1,51 @@
+[
+    {
+      "Certification" : "Digital Marketing Professional Certification",
+      "organization" : "Institute Of Management, Technology & Finance",
+      "issueddate" : "Sep, 2024",
+      "imageSrc" : "history/MTF.png"
+    },
+
+    {
+        "Certification" : "Learn User Interface and User Experience UI UX with Adobe XD and Figma",
+        "organization" : "Udemy",
+        "issueddate" : "Aug, 2024",
+        "imageSrc" : "history/udemy.png"
+    },
+
+    {
+      "Certification" : "Javascript Practicals Crash Course",
+      "organization" : "Udemy",
+      "issueddate" : "June, 2024",
+      "imageSrc" : "history/udemy.png"
+    },
+
+    {
+      "Certification" : "CRISC 101- Certified in Risk Information Systems and Control",
+      "organization" : "Udemy",
+      "issueddate" : "Jan, 2024",
+      "imageSrc" : "history/udemy.png"
+    },
+
+    {
+      "Certification" : "Ethical Hacking: Web Enumeration",
+      "organization" : "Udemy",
+      "issueddate" : "Jan, 2024",
+      "imageSrc" : "history/udemy.png"
+    },
+
+    {
+        "Certification" : "Learn MySQL - For Beginners",
+        "organization" : "Udemy",
+        "issueddate" : "Sep, 2023",
+        "imageSrc" : "history/udemy.png"
+      },
+
+      {
+        "Certification" : "Web hosting basics",
+        "organization" : "Udemy",
+        "issueddate" : "June, 2023",
+        "imageSrc" : "history/udemy.png"
+      }
+
+]
