@@ -1,11 +1,275 @@
 :root {
-    /* Colours */
-    --color-text: #fff;
+    /* Primary Colors */
+    --color-text: #ffffff;
     --color-primary: #007BFF;
+    --color-primary-dark: #0056b3;
+    --color-primary-light: #4da3ff;
     --color-secondary: #040f24;
     --color-dark: #0b2447;
     --color-bg: #04152d;
     
+    /* Accent Colors */
+    --color-accent: #a5d7e8;
+    --color-accent-dark: #7fb8d4;
+    --color-success: #28a745;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+    --color-info: #17a2b8;
+    
+    /* Gradient Presets */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    --gradient-secondary: linear-gradient(135deg, #19376d, #132a53);
+    --gradient-dark: linear-gradient(180deg, var(--color-bg) 0%, var(--color-secondary) 100%);
+    --gradient-text: linear-gradient(135deg, #ffffff 0%, #a5d7e8 100%);
+    
     /* Fonts */
-    --font-roboto: "Roboto";
+    --font-roboto: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "Courier New", monospace;
+    
+    /* Font Sizes */
+    --text-xs: 0.75rem;      /* 12px */
+    --text-sm: 0.875rem;     /* 14px */
+    --text-base: 1rem;       /* 16px */
+    --text-lg: 1.125rem;     /* 18px */
+    --text-xl: 1.25rem;      /* 20px */
+    --text-2xl: 1.5rem;      /* 24px */
+    --text-3xl: 1.875rem;    /* 30px */
+    --text-4xl: 2.25rem;     /* 36px */
+    --text-5xl: 3rem;        /* 48px */
+    --text-6xl: 3.75rem;     /* 60px */
+    
+    /* Spacing System (8px base) */
+    --spacing-1: 0.5rem;     /* 8px */
+    --spacing-2: 1rem;       /* 16px */
+    --spacing-3: 1.5rem;     /* 24px */
+    --spacing-4: 2rem;       /* 32px */
+    --spacing-5: 2.5rem;     /* 40px */
+    --spacing-6: 3rem;       /* 48px */
+    --spacing-8: 4rem;       /* 64px */
+    --spacing-10: 5rem;      /* 80px */
+    --spacing-12: 6rem;      /* 96px */
+    
+    /* Border Radius */
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+    --radius-circle: 50%;
+    
+    /* Transitions & Animations */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --transition-bounce: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-smooth: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    
+    /* Shadows */
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3);
+    --shadow-2xl: 0 30px 60px rgba(0, 0, 0, 0.4);
+    
+    /* Glows */
+    --glow-primary: 0 0 20px rgba(0, 123, 255, 0.3);
+    --glow-primary-strong: 0 0 30px rgba(0, 123, 255, 0.5);
+    --glow-accent: 0 0 20px rgba(165, 215, 232, 0.3);
+    --glow-success: 0 0 20px rgba(40, 167, 69, 0.3);
+    
+    /* Backdrop Filters */
+    --blur-sm: blur(4px);
+    --blur-md: blur(10px);
+    --blur-lg: blur(20px);
+    --blur-xl: blur(40px);
+    
+    /* Z-index Layers */
+    --z-base: 1;
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+    --z-top: 9999;
+    
+    /* Container Widths */
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1536px;
+    
+    /* Breakpoints (for reference) */
+    --screen-sm: 640px;
+    --screen-md: 768px;
+    --screen-lg: 1024px;
+    --screen-xl: 1280px;
+    --screen-2xl: 1536px;
+    
+    /* Opacity Levels */
+    --opacity-10: 0.1;
+    --opacity-20: 0.2;
+    --opacity-30: 0.3;
+    --opacity-40: 0.4;
+    --opacity-50: 0.5;
+    --opacity-60: 0.6;
+    --opacity-70: 0.7;
+    --opacity-80: 0.8;
+    --opacity-90: 0.9;
+    
+    /* Glass Effect */
+    --glass-bg: rgba(12, 12, 12, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-blur: blur(10px);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-light);
+}
+
+/* Selection */
+::selection {
+    background: var(--color-primary);
+    color: var(--color-text);
+}
+
+/* Focus Visible */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Utility Classes */
+.container {
+    max-width: var(--container-xl);
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.gradient-text {
+    background: var(--gradient-text);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

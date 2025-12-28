@@ -1,89 +1,325 @@
 @import "../../vars.css";
 
 .navbar {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(4, 21, 45, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 50px;
-    z-index: 2;
-    margin: 0 5%;
+    padding: 20px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.title {
-    font-size: 30px;
-    font-weight: 600;
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     text-decoration: none;
     color: var(--color-text);
+    font-size: 24px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.logoIcon {
+    font-size: 28px;
+    color: var(--color-primary);
+    font-family: 'Courier New', monospace;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logoIcon {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.logoText {
+    background: linear-gradient(135deg, #fff 0%, var(--color-accent) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .menuBtn {
     display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
 }
 
-.menu {
-    display: flex;
+.menuBtn span {
+    width: 28px;
+    height: 3px;
+    background: var(--color-text);
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
+.menuBtn.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.menuBtn.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menuBtn.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Menu Items */
 .menuItems {
     display: flex;
-    gap: 47px;
+    align-items: center;
+    gap: 8px;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuItems li {
+    position: relative;
 }
 
 .menuItems a {
-    font-size: 25px;
-    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menuIcon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
 }
 
 .menuItems a:hover {
-    color: var(--color-primary);
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.05);
 }
 
-@media screen and (max-width: 830px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.menuItems a:hover .menuIcon {
+    transform: scale(1.2) rotate(10deg);
+}
 
-    .menu {
-        position: absolute;
-        right: 0;
-        margin-right: 10%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 11px;
-        z-index: 3;
+.menuItems a.active {
+    color: var(--color-text);
+    background: rgba(0, 123, 255, 0.15);
+    border: 1px solid rgba(0, 123, 255, 0.3);
+}
+
+.menuItems a.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background: var(--color-primary);
+}
+
+/* GitHub Button */
+.githubBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.githubBtn svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.githubBtn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
+}
+
+.githubBtn:hover svg {
+    transform: rotate(360deg);
+}
+
+/* Progress Bar */
+.progressBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    width: 0;
+    transition: width 0.1s ease;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    to {
+        width: var(--scroll, 0%);
+    }
+}
+
+/* Mobile Menu */
+@media screen and (max-width: 830px) {
+    .navContainer {
+        padding: 16px 5%;
     }
 
     .menuBtn {
-        display: block;
-        cursor: pointer;
+        display: flex;
+    }
+
+    .menu {
+        position: relative;
     }
 
     .menuItems {
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: linear-gradient(135deg, rgba(4, 21, 45, 0.98), rgba(25, 55, 109, 0.95));
+        backdrop-filter: blur(20px);
         flex-direction: column;
-        align-items: center;
-        gap: 13px;
-        border-radius: 10px;
-        background: rgb(25, 55, 109);
-        background: linear-gradient(
-            50deg, 
-            rgba(25, 54, 109, 0.726) 30%,
-            rgb(47, 77, 133) 80%);
-        padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+        align-items: flex-start;
+        padding: 100px 30px 30px;
+        gap: 0;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        overflow-y: auto;
     }
 
-    .menuItems:hover {
-        color: var(--color-primary);
+    .menuItems.menuOpen {
+        right: 0;
     }
 
-    .menuOpen {
-        display: flex;
-        z-index: 1;
+    .menuItems li {
+        width: 100%;
+        opacity: 0;
+        transform: translateX(50px);
+        animation: slideIn 0.3s ease-out forwards;
     }
-    
+
+    .menuOpen li:nth-child(1) { animation-delay: 0.1s; }
+    .menuOpen li:nth-child(2) { animation-delay: 0.15s; }
+    .menuOpen li:nth-child(3) { animation-delay: 0.2s; }
+    .menuOpen li:nth-child(4) { animation-delay: 0.25s; }
+
+    @keyframes slideIn {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .menuItems a {
+        width: 100%;
+        padding: 16px 20px;
+        justify-content: flex-start;
+        font-size: 18px;
+        border-radius: 12px;
+        margin-bottom: 8px;
+    }
+
+    .menuItems a:hover,
+    .menuItems a.active {
+        background: rgba(0, 123, 255, 0.2);
+    }
+
+    .githubBtn {
+        position: fixed;
+        bottom: 30px;
+        right: -100%;
+        width: calc(280px - 60px);
+        justify-content: center;
+        padding: 16px 24px;
+        font-size: 16px;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+    }
+
+    .menuOpen ~ .githubBtn {
+        right: 30px;
+    }
+
+    /* Overlay */
+    .menuOpen::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(4px);
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .logoIcon {
+        font-size: 24px;
+    }
+
+    .menuItems {
+        width: 100%;
+        right: -100%;
+    }
+
+    .githubBtn {
+        width: calc(100% - 60px);
+    }
 }

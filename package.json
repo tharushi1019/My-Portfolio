@@ -1,9 +1,9 @@
 {
+  "homepage": "https://tharushi1019.github.io/My-Portfolio",
   "name": "react-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tharushi1019.github.io/My-Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

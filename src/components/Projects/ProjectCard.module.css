@@ -3,77 +3,360 @@
 .container {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    background: linear-gradient(180deg, #19376d 0%, #132a53 100%);
-    box-shadow: 0 16px 14px 0 #04152d;
-    padding: 18px 24px;
-    max-width: 345px;
+    background: linear-gradient(135deg, rgba(12, 12, 12, 0.9), rgba(25, 55, 109, 0.4));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    overflow: hidden;
+    max-width: 380px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    animation: fadeInScale 0.6s ease-out backwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: left 0.6s;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.container:hover::before {
+    left: 100%;
 }
 
 .container:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-12px);
+    border-color: var(--color-primary);
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(0, 123, 255, 0.3);
+}
+
+/* Card Glow */
+.cardGlow {
+    position: absolute;
+    inset: -100px;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.3), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Image Wrapper */
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #19376d, #132a53);
 }
 
 .image {
-    margin-bottom: 26px;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.image:hover {
+.container:hover .image {
     transform: scale(1.1);
 }
 
+/* Image Overlay */
+.imageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container:hover .imageOverlay {
+    opacity: 1;
+}
+
+.quickActions {
+    display: flex;
+    gap: 16px;
+}
+
+.quickAction {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.container:hover .quickAction {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.quickAction:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.quickAction:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.quickAction svg {
+    width: 20px;
+    height: 20px;
+}
+
+.quickAction:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(0) scale(1.1);
+}
+
+/* Featured Badge */
+.featuredBadge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+    animation: pulse 2s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+    }
+}
+
+.featuredBadge svg {
+    width: 18px;
+    height: 18px;
+    color: #8b6914;
+}
+
+/* Content */
+.content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+}
+
 .title {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .description {
-    margin-top: 6px;
-    font-size: 14px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Skills */
+.skillsWrapper {
+    margin-top: auto;
 }
 
 .skills {
-    width: 100%;
-    margin-top: 14px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .skill {
-    font-size: 18px;
-    font-weight: 400;
-    border-radius: 100px;
-    background: var(--color-dark);
-    padding: 2px 22px;
+    padding: 6px 14px;
+    background: rgba(0, 123, 255, 0.15);
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
 }
 
+.skill:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.skillMore {
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Links */
 .links {
-    width: 100%;
-    margin-top: 18px;
     display: flex;
-    justify-content: space-around;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
     text-decoration: none;
-    color: var(--color-text);
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 5px;
-    background: var(--color-primary);
-    padding: 5px 22px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.link:hover {
-    background: var(--color-primary-dark);
-    font-style: oblique;
-    color: var(--color-primary);
-    font-weight: 800;
-}  
+.link span {
+    position: relative;
+    z-index: 1;
+}
 
+.link svg {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.demoLink {
+    background: var(--color-primary);
+    color: white;
+}
+
+.demoLink::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.demoLink:hover::before {
+    opacity: 1;
+}
+
+.demoLink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+.demoLink:hover svg {
+    transform: translateX(3px) translateY(-3px);
+}
+
+.sourceLink {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-text);
+}
+
+.sourceLink:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.sourceLink:hover svg {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .imageWrapper {
+        height: 200px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .link {
+        width: 100%;
+    }
+}
