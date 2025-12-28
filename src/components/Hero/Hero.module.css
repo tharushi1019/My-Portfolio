@@ -6,9 +6,7 @@
     align-items: center;
     justify-content: space-between;
     min-height: 90vh;
-    padding-top: 100px; /* Add padding for fixed navbar */
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 100px;
     overflow: hidden;
     z-index: 1;
 }
@@ -382,8 +380,8 @@
 }
 
 .heroImg {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     object-fit: cover;
     position: relative;

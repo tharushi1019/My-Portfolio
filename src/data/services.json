@@ -1,0 +1,23 @@
+[
+    {
+      "icon": "about/cursorIcon.png",
+      "emoji": "💻",
+      "title": "Full-Stack Development",
+      "description": "I build dynamic, responsive web applications using React.js, Node.js, and modern JavaScript frameworks. Experienced in creating scalable solutions with MongoDB, Firebase, and RESTful APIs. Passionate about clean code and optimal performance.",
+      "technologies": ["React.js", "Node.js", "MongoDB", "Firebase"]
+    },
+    {
+      "icon": "about/serverIcon.png",
+      "emoji": "🤖",
+      "title": "AI & Machine Learning",
+      "description": "Integrating AI/ML into web applications using TensorFlow, FastAPI, and Stable Diffusion. Currently developing AI-powered solutions for branding and analytics. Experienced in model training, deployment, and real-time inference.",
+      "technologies": ["TensorFlow", "FastAPI", "Python", "ML Models"]
+    },
+    {
+      "icon": "about/uiIcon.png",
+      "emoji": "🎨",
+      "title": "UI/UX Design",
+      "description": "Creating intuitive, user-centered designs with Figma and Adobe XD. Focused on accessibility, responsive layouts, and modern design principles. I believe great design is invisible – it just works beautifully.",
+      "technologies": ["Figma", "Adobe XD", "Prototyping", "User Research"]
+    }
+]

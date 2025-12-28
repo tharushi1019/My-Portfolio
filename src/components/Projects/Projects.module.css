@@ -1,27 +1,301 @@
 @import "../../vars.css";
 
 .container {
-    margin-top: 76px;
+    padding: 40px 5%;
+    margin-top: 40px;
     color: var(--color-text);
-    margin-left: 5%;
-    margin-right: 5%;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.tagline {
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .title {
-    font-size: 35px;
+    font-size: 48px;
     font-weight: 700;
     letter-spacing: 1.75px;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #fff 0%, #a5d7e8 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: slideUp 0.6s ease-out 0.2s backwards;
 }
 
-.projects {
-    margin-top: 37px;
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titleUnderline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    margin: 0 auto 24px;
+    border-radius: 2px;
+    animation: expandWidth 0.8s ease-out 0.4s backwards;
+}
+
+@keyframes expandWidth {
+    from { width: 0; }
+    to { width: 80px; }
+}
+
+.subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    animation: fadeIn 0.6s ease-out 0.6s backwards;
+}
+
+/* Filter Container */
+.filterContainer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 15px;
-    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 50px;
+    animation: fadeIn 0.8s ease-out 0.8s backwards;
 }
 
+.filterBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, rgba(12, 12, 12, 0.8), rgba(25, 55, 109, 0.3));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.filterBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.filterBtn:hover::before {
+    left: 100%;
+}
+
+.filterBtn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-text);
+    transform: translateY(-2px);
+}
+
+.filterBtn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 123, 255, 0.4);
+}
+
+.filterIcon {
+    font-size: 20px;
+}
+
+.filterCount {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.filterBtn.active .filterCount {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Projects Grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-out 1s backwards;
+}
+
+/* Stats Section */
+.statsSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 80px auto 0;
+    padding-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1.2s ease-out backwards;
+}
+
+.statItem {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, rgba(12, 12, 12, 0.6), rgba(25, 55, 109, 0.2));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.statItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 123, 255, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.statItem:hover::before {
+    left: 100%;
+}
+
+.statItem:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-primary);
+    box-shadow: 0 15px 40px rgba(0, 123, 255, 0.2);
+}
+
+.statNumber {
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .projects {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 60px 5%;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .filterContainer {
+        margin-bottom: 40px;
+    }
+
+    .filterBtn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .filterIcon {
+        font-size: 18px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .statsSection {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 60px;
+        padding-top: 40px;
+    }
+
+    .statItem {
+        padding: 24px 16px;
+    }
+
+    .statNumber {
+        font-size: 36px;
+    }
+
+    .statLabel {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .filterContainer {
+        flex-direction: column;
+    }
+
+    .filterBtn {
+        width: 100%;
+        justify-content: center;
+    }
+}

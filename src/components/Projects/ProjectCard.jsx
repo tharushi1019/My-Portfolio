@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import styles from './ProjectCard.module.css';
-
-// Using placeholder images from public CDNs (no local files needed)
-const getProjectImage = (imageSrc) => {
-  // Map to placeholder images or use a CDN service
-  const projectName = imageSrc.split('/').pop().replace('.png', '');
-  return `https://via.placeholder.com/400x250/19376d/ffffff?text=${projectName}`;
-};
+import { getImageUrl } from '../../utils';
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
@@ -22,7 +16,7 @@ export const ProjectCard = ({
       {/* Image Container with Overlay */}
       <div className={styles.imageWrapper}>
         <img 
-          src={getProjectImage(imageSrc)}
+          src={getImageUrl(imageSrc)}
           alt={`${title} preview`}
           className={styles.image}
           loading="lazy"

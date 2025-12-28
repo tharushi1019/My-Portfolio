@@ -3,7 +3,7 @@
 .container {
     position: relative;
     background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-secondary) 100%);
-    padding: 100px 5%;
+    padding: 30px 5%;
     margin-top: 100px;
     overflow: hidden;
 }

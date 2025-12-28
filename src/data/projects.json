@@ -4,15 +4,15 @@
     "imageSrc": "projects/brandybot.png",
     "description": "AI-powered comprehensive branding platform featuring logo generation, brand guideline creation, mockup generator, and interactive chatbot. Built with modern tech stack for seamless user experience.",
     "skills": ["React", "Node.js", "FastAPI", "MongoDB", "Stable Diffusion", "Python"],
-    "demo": "https://github.com/tharushi1019",
-    "source": "https://github.com/tharushi1019"
+    "demo": "https://drive.google.com/file/d/1hYFsx1ZcvMst_BY2XxWESsyE6sAzWLFC/view?usp=sharing",
+    "source": "https://github.com/tharushi1019/brandybot"
   },
   {
     "title": "GeoInsight Dashboard",
     "imageSrc": "projects/geoinsight.png",
     "description": "Geography-based data aggregator with interactive visual dashboards. Features real-time data visualization, Chart.js integration, and responsive design for data-driven insights.",
-    "skills": ["JavaScript", "Chart.js", "HTML5", "CSS3"],
-    "demo": "https://github.com/tharushi1019/GeoInsightDashboard",
+    "skills": ["React", "MongoDB", "Tailwind CSS", "Node.js", "APIs", "Express"],
+    "demo": "https://drive.google.com/file/d/1ZzOWDPCJlo3UwifJnufyTcHVs-noDqeW/view?usp=sharing",
     "source": "https://github.com/tharushi1019/GeoInsightDashboard"
   },
   {
@@ -20,7 +20,7 @@
     "imageSrc": "projects/mental-health.png",
     "description": "Machine learning project training models on mental health datasets. Implements data preprocessing, model training, and evaluation for predictive mental health analytics.",
     "skills": ["Python", "Jupyter", "Machine Learning", "Pandas"],
-    "demo": "https://github.com/tharushi1019/Mental-Health-Model-Training",
+    "demo": "https://mental-health-model-training-fgqtqv6kvfdykrgzjyptiu.streamlit.app/",
     "source": "https://github.com/tharushi1019/Mental-Health-Model-Training"
   },
   {
@@ -28,7 +28,7 @@
     "imageSrc": "projects/academic-risk.png",
     "description": "ML-powered system predicting academic performance risks using XGBoost and Random Forest. Features SHAP and LIME for model explainability and insights.",
     "skills": ["Python", "XGBoost", "SHAP", "LIME", "Scikit-learn"],
-    "demo": "https://github.com/tharushi1019/Machine-Learning-for-Academic-Risk-Prediction",
+    "demo": "https://25xpanhzgvp4rapp9pzhm6r.streamlit.app/",
     "source": "https://github.com/tharushi1019/Machine-Learning-for-Academic-Risk-Prediction"
   },
   {
@@ -36,7 +36,7 @@
     "imageSrc": "projects/hervoice.png",
     "description": "Mobile safety application supporting UN SDG 5 (Gender Equality). Features emergency alerts, live location tracking, SMS notifications, and secure Firebase authentication.",
     "skills": ["Java", "Android Studio", "Firebase", "Real-time DB"],
-    "demo": "https://github.com/tharushi1019/HerVoice",
+    "demo": "https://youtu.be/H2vpi3nhKIs",
     "source": "https://github.com/tharushi1019/HerVoice"
   },
   {
@@ -57,9 +57,9 @@
   },
 {
       "title": "Daily Mirror Website Redesign (Group)",
-      "imageSrc": "projects/daily-mirror-redesign.PNG",
+      "imageSrc": "projects/daily-mirror-redesign.png",
       "description": "A redesign of the Daily Mirror website focusing on improving UI/UX design, navigation, and user interaction. Implemented a modern, user-friendly layout while enhancing the responsiveness of the website.",
-      "skills": ["UI/UX Design", "HTML", "CSS", "JavaScript"],
+      "skills": ["UI/UX Design", "Figma", "User Personas", "Wireframing"],
       "demo": "https://drive.google.com/file/d/1shw4XGK8OqtAKoWu3tQ1TEPkIoLDo79t/view?usp=sharing",
       "source": "https://www.figma.com/design/dR8owZfqFdsR9pYQPl5dDr/Redesign-DailyMirror.lk-Website?node-id=0-1&t=OfUL343zn0vdwUa1-1"
   }
