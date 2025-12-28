@@ -1,5 +1,53 @@
 [
   {
+    "title": "BrandyBot - AI Branding Toolkit",
+    "imageSrc": "projects/brandybot.png",
+    "description": "AI-powered comprehensive branding platform featuring logo generation, brand guideline creation, mockup generator, and interactive chatbot. Built with modern tech stack for seamless user experience.",
+    "skills": ["React", "Node.js", "FastAPI", "MongoDB", "Stable Diffusion", "Python"],
+    "demo": "https://github.com/tharushi1019",
+    "source": "https://github.com/tharushi1019"
+  },
+  {
+    "title": "GeoInsight Dashboard",
+    "imageSrc": "projects/geoinsight.png",
+    "description": "Geography-based data aggregator with interactive visual dashboards. Features real-time data visualization, Chart.js integration, and responsive design for data-driven insights.",
+    "skills": ["JavaScript", "Chart.js", "HTML5", "CSS3"],
+    "demo": "https://github.com/tharushi1019/GeoInsightDashboard",
+    "source": "https://github.com/tharushi1019/GeoInsightDashboard"
+  },
+  {
+    "title": "Mental Health Model Training",
+    "imageSrc": "projects/mental-health.png",
+    "description": "Machine learning project training models on mental health datasets. Implements data preprocessing, model training, and evaluation for predictive mental health analytics.",
+    "skills": ["Python", "Jupyter", "Machine Learning", "Pandas"],
+    "demo": "https://github.com/tharushi1019/Mental-Health-Model-Training",
+    "source": "https://github.com/tharushi1019/Mental-Health-Model-Training"
+  },
+  {
+    "title": "Academic Risk Prediction System",
+    "imageSrc": "projects/academic-risk.png",
+    "description": "ML-powered system predicting academic performance risks using XGBoost and Random Forest. Features SHAP and LIME for model explainability and insights.",
+    "skills": ["Python", "XGBoost", "SHAP", "LIME", "Scikit-learn"],
+    "demo": "https://github.com/tharushi1019/Machine-Learning-for-Academic-Risk-Prediction",
+    "source": "https://github.com/tharushi1019/Machine-Learning-for-Academic-Risk-Prediction"
+  },
+  {
+    "title": "HerVoice - Safety App",
+    "imageSrc": "projects/hervoice.png",
+    "description": "Mobile safety application supporting UN SDG 5 (Gender Equality). Features emergency alerts, live location tracking, SMS notifications, and secure Firebase authentication.",
+    "skills": ["Java", "Android Studio", "Firebase", "Real-time DB"],
+    "demo": "https://github.com/tharushi1019/HerVoice",
+    "source": "https://github.com/tharushi1019/HerVoice"
+  },
+  {
+    "title": "Oven Crust Bakery System",
+    "imageSrc": "projects/bakery-website.png",
+    "description": "Complete bakery management system with website, admin panel, product catalog, and order tracking. Features CRUD operations and user authentication.",
+    "skills": ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
+    "demo": "https://youtu.be/2rAPrxtL0Sg",
+    "source": "https://github.com/tharushi1019/Bakery-Shop-Web"
+  },
+  {
       "title": "Lesson Planner System - Java",
       "imageSrc": "projects/lesson-planner.png",
       "description": "A Java-based lesson planner system using MVC architecture and MySQL. The system features a user login interface, lesson management, teacher management, and CRUD functionalities.",
@@ -7,17 +55,7 @@
       "demo": "https://youtu.be/SFTkt60iBoQ?si=vV6z-O1GXgtfQLVO",
       "source": "https://github.com/tharushi1019/ITBIN-2211-0202"
   },
-  
-  {
-      "title": "Bakery Shop Website (Group)",
-      "imageSrc": "projects/bakery-website.png",
-      "description": "A responsive bakery shop website with user authentication, CRUD operations, and data management. The website was built with HTML, CSS, JavaScript, and PHP, with MySQL for backend support.",
-      "skills": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      "demo": "https://youtu.be/2rAPrxtL0Sg",
-      "source": "https://www.github.com/tharushi1019/bakery-shop"
-  },
-  
-  {
+{
       "title": "Daily Mirror Website Redesign (Group)",
       "imageSrc": "projects/daily-mirror-redesign.PNG",
       "description": "A redesign of the Daily Mirror website focusing on improving UI/UX design, navigation, and user interaction. Implemented a modern, user-friendly layout while enhancing the responsiveness of the website.",

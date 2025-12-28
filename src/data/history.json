@@ -1,19 +1,53 @@
 [
-    {
-      "Certification" : "Digital Marketing Professional Certification",
-      "organization" : "Institute Of Management, Technology & Finance",
-      "issueddate" : "Sep, 2024",
-      "imageSrc" : "history/MTF.png"
-    },
-
-    {
-        "Certification" : "Learn User Interface and User Experience UI UX with Adobe XD and Figma",
-        "organization" : "Udemy",
-        "issueddate" : "Aug, 2024",
-        "imageSrc" : "history/udemy.png"
-    },
-
-    {
+  {
+    "Certification": "AI/ML Engineer - Stage 1",
+    "organization": "SLIIT",
+    "issueddate": "Aug, 2025",
+    "imageSrc": "history/sliit.png"
+  },
+  {
+    "Certification": "Graphic Design Essentials",
+    "organization": "Canva",
+    "issueddate": "Jan, 2025",
+    "imageSrc": "history/canva.png"
+  },
+  {
+    "Certification": "Advent of Cyber 2024",
+    "organization": "TryHackMe",
+    "issueddate": "Dec, 2024",
+    "imageSrc": "history/tryhackme.png"
+  },
+  {
+    "Certification": "IT Essentials",
+    "organization": "Cisco",
+    "issueddate": "Dec, 2024",
+    "imageSrc": "history/cisco.png"
+  },
+  {
+    "Certification": "Social Media Bots with Python",
+    "organization": "Udemy",
+    "issueddate": "Dec, 2024",
+    "imageSrc": "history/udemy.png"
+  },
+  {
+    "Certification": "WordPress for Beginners",
+    "organization": "Eduta.org",
+    "issueddate": "Dec, 2024",
+    "imageSrc": "history/eduta.png"
+  },
+  {
+    "Certification": "Digital Marketing Professional",
+    "organization": "IMTF",
+    "issueddate": "Sep, 2024",
+    "imageSrc": "history/MTF.png"
+  },
+  {
+    "Certification": "UI/UX with Adobe XD and Figma",
+    "organization": "Udemy",
+    "issueddate": "Aug, 2024",
+    "imageSrc": "history/udemy.png"
+  },
+  {
       "Certification" : "Javascript Practicals Crash Course",
       "organization" : "Udemy",
       "issueddate" : "June, 2024",
@@ -47,5 +81,4 @@
         "issueddate" : "June, 2023",
         "imageSrc" : "history/udemy.png"
       }
-
 ]

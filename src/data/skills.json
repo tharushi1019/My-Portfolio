@@ -1,56 +1,62 @@
 [
-    {
-        "title": "HTML",
-        "imageSrc" : "skills/html.png"
-    },
-
-    {
-        "title": "CSS",
-        "imageSrc": "skills/css.png"
-      },
-
-      {
-        "title": "JavaScript",
-        "imageSrc": "skills/javascript.png"
-      },
-
-      {
-        "title": "PHP",
-        "imageSrc": "skills/php.png"
-      },
-
-      {
-        "title": "React",
-        "imageSrc": "skills/react.png"
-      },
-
-      {
-        "title": "Node",
-        "imageSrc": "skills/node.png"
-      },
-
-      {
-        "title": "MySQL",
-        "imageSrc": "skills/Mysql.png"
-      },
-      
-      {
-        "title": "Figma",
-        "imageSrc": "skills/figma.png"
-      },
-
-      {
-        "title": "Java",
-        "imageSrc": "skills/java.png"
-      },
-
-      {
-        "title": "C",
-        "imageSrc": "skills/c.png"
-      },
-
-      {
-        "title": "Adobe XD",
-        "imageSrc": "skills/Adobexd.png"
-      }
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.png"
+  },
+  {
+    "title": "Node.js",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "Python",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "HTML5",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS3",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "MySQL",
+    "imageSrc": "skills/Mysql.png"
+  },
+  {
+    "title": "Firebase",
+    "imageSrc": "skills/firebase.png"
+  },
+  {
+    "title": "TensorFlow",
+    "imageSrc": "skills/tensorflow.png"
+  },
+  {
+    "title": "FastAPI",
+    "imageSrc": "skills/fastapi.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/git.png"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "skills/figma.png"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/java.png"
+  },
+  {
+    "title": "PHP",
+    "imageSrc": "skills/php.png"
+  }
 ]
