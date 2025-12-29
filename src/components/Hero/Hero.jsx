@@ -76,10 +76,15 @@ const Hero = () => {
               <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          
-          <a href="#projects" className={styles.secondaryBtn}>
-            <span className={styles.btnText}>View Projects</span>
+
+          <a
+            href="Tharushi_Nimnadi_CV.pdf"
+            download
+            className={styles.secondaryBtn}
+          >
+            <span className={styles.btnText}>Download CV</span>
           </a>
+          
         </div>
 
         <div className={styles.socialLinks}>

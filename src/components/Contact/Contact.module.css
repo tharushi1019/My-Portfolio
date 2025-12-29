@@ -284,6 +284,23 @@
     transform: translateX(5px);
 }
 
+.ctaActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cvButton {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.cvButton:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 /* Footer */
 .footer {
     padding-top: 40px;
