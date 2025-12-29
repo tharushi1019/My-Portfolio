@@ -1,23 +1,23 @@
 [
-    {
-      "icon": "about/cursorIcon.png",
-      "emoji": "💻",
-      "title": "Full-Stack Development",
-      "description": "I build dynamic, responsive web applications using React.js, Node.js, and modern JavaScript frameworks. Experienced in creating scalable solutions with MongoDB, Firebase, and RESTful APIs. Passionate about clean code and optimal performance.",
-      "technologies": ["React.js", "Node.js", "MongoDB", "Firebase"]
-    },
-    {
-      "icon": "about/serverIcon.png",
-      "emoji": "🤖",
-      "title": "AI & Machine Learning",
-      "description": "Integrating AI/ML into web applications using TensorFlow, FastAPI, and Stable Diffusion. Currently developing AI-powered solutions for branding and analytics. Experienced in model training, deployment, and real-time inference.",
-      "technologies": ["TensorFlow", "FastAPI", "Python", "ML Models"]
-    },
-    {
-      "icon": "about/uiIcon.png",
-      "emoji": "🎨",
-      "title": "UI/UX Design",
-      "description": "Creating intuitive, user-centered designs with Figma and Adobe XD. Focused on accessibility, responsive layouts, and modern design principles. I believe great design is invisible – it just works beautifully.",
-      "technologies": ["Figma", "Adobe XD", "Prototyping", "User Research"]
-    }
+  {
+    "icon": "about/cursorIcon.png",
+    "emoji": "💻",
+    "title": "Full-Stack Web Development",
+    "description": "I build responsive and dynamic web applications using React.js, Node.js, and modern JavaScript. Experienced in developing full-stack solutions with MongoDB, Firebase, and RESTful APIs through academic and personal projects, with a focus on clean code and usability.",
+    "technologies": ["React.js", "Node.js", "MongoDB", "Firebase"]
+  },
+  {
+    "icon": "about/serverIcon.png",
+    "emoji": "🤖",
+    "title": "AI-Driven Web Features",
+    "description": "I integrate AI and machine learning features into web applications using Python, TensorFlow, FastAPI, and Stable Diffusion. Hands-on experience through academic projects involving model training, API integration, and AI-powered branding tools.",
+    "technologies": ["Python", "TensorFlow", "FastAPI", "Stable Diffusion"]
+  },
+  {
+    "icon": "about/uiIcon.png",
+    "emoji": "🎨",
+    "title": "UI / UX Design",
+    "description": "I design clean and user-friendly interfaces using Figma and Adobe XD, focusing on responsive layouts, accessibility, and modern UI principles. My goal is to create interfaces that are intuitive, visually appealing, and easy to use.",
+    "technologies": ["Figma", "Adobe XD", "Responsive Design", "Prototyping"]
+  }
 ]

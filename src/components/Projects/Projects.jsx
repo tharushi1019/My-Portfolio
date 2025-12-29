@@ -98,15 +98,15 @@ export const Projects = () => {
       <div className={styles.statsSection}>
         <div className={styles.statItem}>
           <div className={styles.statNumber}>{projects.length}+</div>
-          <div className={styles.statLabel}>Projects Completed</div>
+          <div className={styles.statLabel}>Academic & Personal Projects</div>
         </div>
         <div className={styles.statItem}>
-          <div className={styles.statNumber}>15+</div>
-          <div className={styles.statLabel}>Technologies Used</div>
+          <div className={styles.statNumber}>10+</div>
+          <div className={styles.statLabel}>Technologies Explored</div>
         </div>
         <div className={styles.statItem}>
-          <div className={styles.statNumber}>100%</div>
-          <div className={styles.statLabel}>Client Satisfaction</div>
+          <div className={styles.statNumber}>3+</div>
+          <div className={styles.statLabel}>AI/ML Projects</div>
         </div>
       </div>
     </section>

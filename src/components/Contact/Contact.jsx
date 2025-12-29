@@ -111,13 +111,14 @@ const Contact = () => {
             </div>
             <div className={styles.footerRight}>
               <p className={styles.copyright}>
-                © 2025 Tharushi Nimnadi. All rights reserved.
+                © {new Date().getFullYear()} Tharushi Nimnadi. All rights reserved.
               </p>
             </div>
           </div>
           
           {/* Scroll to Top Button */}
-          <button 
+          <button
+            type="button" 
             className={styles.scrollTop}
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             aria-label="Scroll to top"

@@ -33,11 +33,11 @@ export const Experience = () => {
       id="experience"
     >
       <div className={styles.header}>
-        <span className={styles.tagline}>My Expertise</span>
+        <span className={styles.tagline}>My Background</span>
         <h2 className={styles.title}>Skills & Certifications</h2>
         <div className={styles.titleUnderline}></div>
         <p className={styles.subtitle}>
-          Constantly learning and growing with the latest technologies and industry certifications
+          Technical skills and certifications gained through academic study and hands-on project works
         </p>
       </div>
 
@@ -119,11 +119,14 @@ export const Experience = () => {
                       </svg>
                       {historyItem.issueddate}
                     </span>
-                    <span className={styles.certStatus}>Completed</span>
+                    <span className={styles.certStatus}>Certified</span>
                   </div>
                 </div>
               </div>
             ))}
+            <p className={styles.certNote}>
+              Additional certifications and learning activities are available on my LinkedIn profile.
+            </p>
           </div>
         )}
       </div>
@@ -147,8 +150,8 @@ export const Experience = () => {
         </div>
         <div className={styles.statCard}>
           <div className={styles.statIcon}>🎯</div>
-          <div className={styles.statNumber}>100%</div>
-          <div className={styles.statLabel}>Dedication</div>
+          <div className={styles.statNumber}>Focused</div>
+          <div className={styles.statLabel}>Learner</div>
         </div>
       </div>
     </section>

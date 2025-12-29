@@ -1,21 +1,15 @@
 [
   {
-    "Certification": "AI/ML Engineer - Stage 1",
+    "Certification": "AI/ML Engineer – Stage 1",
     "organization": "SLIIT",
     "issueddate": "Aug, 2025",
     "imageSrc": "history/sliit.png"
   },
   {
-    "Certification": "Graphic Design Essentials",
-    "organization": "Canva",
-    "issueddate": "Jan, 2025",
-    "imageSrc": "history/canva.png"
-  },
-  {
-    "Certification": "Advent of Cyber 2024",
-    "organization": "TryHackMe",
-    "issueddate": "Dec, 2024",
-    "imageSrc": "history/tryhackme.png"
+    "Certification": "Artificial Intelligence Fundamentals",
+    "organization": "IBM SkillsBuild",
+    "issueddate": "Dec, 2025",
+    "imageSrc": "history/ibm.png"
   },
   {
     "Certification": "IT Essentials",
@@ -24,61 +18,45 @@
     "imageSrc": "history/cisco.png"
   },
   {
-    "Certification": "Social Media Bots with Python",
-    "organization": "Udemy",
+    "Certification": "Introduction to AI Concepts",
+    "organization": "Microsoft",
+    "issueddate": "June, 2025",
+    "imageSrc": "history/microsoft.png"
+  },
+  {
+    "Certification": "Advent of Cyber",
+    "organization": "TryHackMe",
     "issueddate": "Dec, 2024",
-    "imageSrc": "history/udemy.png"
+    "imageSrc": "history/tryhackme.png"
   },
   {
-    "Certification": "WordPress for Beginners",
-    "organization": "Eduta.org",
-    "issueddate": "Dec, 2024",
-    "imageSrc": "history/eduta.png"
-  },
-  {
-    "Certification": "Digital Marketing Professional",
-    "organization": "IMTF",
-    "issueddate": "Sep, 2024",
-    "imageSrc": "history/MTF.png"
-  },
-  {
-    "Certification": "UI/UX with Adobe XD and Figma",
+    "Certification": "UI/UX Design with Adobe XD & Figma",
     "organization": "Udemy",
     "issueddate": "Aug, 2024",
     "imageSrc": "history/udemy.png"
   },
   {
-      "Certification" : "Javascript Practicals Crash Course",
-      "organization" : "Udemy",
-      "issueddate" : "June, 2024",
-      "imageSrc" : "history/udemy.png"
-    },
-
-    {
-      "Certification" : "CRISC 101- Certified in Risk Information Systems and Control",
-      "organization" : "Udemy",
-      "issueddate" : "Jan, 2024",
-      "imageSrc" : "history/udemy.png"
-    },
-
-    {
-      "Certification" : "Ethical Hacking: Web Enumeration",
-      "organization" : "Udemy",
-      "issueddate" : "Jan, 2024",
-      "imageSrc" : "history/udemy.png"
-    },
-
-    {
-        "Certification" : "Learn MySQL - For Beginners",
-        "organization" : "Udemy",
-        "issueddate" : "Sep, 2023",
-        "imageSrc" : "history/udemy.png"
-      },
-
-      {
-        "Certification" : "Web hosting basics",
-        "organization" : "Udemy",
-        "issueddate" : "June, 2023",
-        "imageSrc" : "history/udemy.png"
-      }
+    "Certification": "Graphic Design Essentials",
+    "organization": "Canva",
+    "issueddate": "Jan, 2025",
+    "imageSrc": "history/canva.png"
+  },
+  {
+    "Certification": "Intro to Machine Learning",
+    "organization": "Kaggle",
+    "issueddate": "June, 2025",
+    "imageSrc": "history/kaggle.png"
+  },
+  {
+    "Certification": "Data Cleaning with Python",
+    "organization": "Kaggle",
+    "issueddate": "June, 2025",
+    "imageSrc": "history/kaggle.png"
+  },
+  {
+    "Certification": "CRISC 101 – Risk Information Systems",
+    "organization": "Udemy",
+    "issueddate": "Jan, 2024",
+    "imageSrc": "history/udemy.png"
+  }
 ]

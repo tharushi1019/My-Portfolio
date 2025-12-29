@@ -2,42 +2,47 @@
   {
     "title": "BrandyBot - AI Branding Toolkit",
     "imageSrc": "projects/brandybot.png",
-    "description": "AI-powered comprehensive branding platform featuring logo generation, brand guideline creation, mockup generator, and interactive chatbot. Built with modern tech stack for seamless user experience.",
+    "description": "AI-powered branding toolkit developed as a final-year project, featuring logo generation, brand guideline creation, mockup generation, and an interactive chatbot. Built using a full-stack architecture with AI model integration for practical branding use cases.",
     "skills": ["React", "Node.js", "FastAPI", "MongoDB", "Stable Diffusion", "Python"],
     "demo": "https://drive.google.com/file/d/1hYFsx1ZcvMst_BY2XxWESsyE6sAzWLFC/view?usp=sharing",
-    "source": "https://github.com/tharushi1019/brandybot"
+    "source": "https://github.com/tharushi1019/brandybot",
+    "featured": true
   },
   {
     "title": "GeoInsight Dashboard",
     "imageSrc": "projects/geoinsight.png",
-    "description": "Geography-based data aggregator with interactive visual dashboards. Features real-time data visualization, Chart.js integration, and responsive design for data-driven insights.",
+    "description": "Geography-based data visualization dashboard built to aggregate and display data. Implements responsive UI, API integration, and real-time updates for analytical insights.",
     "skills": ["React", "MongoDB", "Tailwind CSS", "Node.js", "APIs", "Express"],
     "demo": "https://drive.google.com/file/d/1ZzOWDPCJlo3UwifJnufyTcHVs-noDqeW/view?usp=sharing",
-    "source": "https://github.com/tharushi1019/GeoInsightDashboard"
+    "source": "https://github.com/tharushi1019/GeoInsightDashboard",
+    "featured": false
   },
   {
     "title": "Mental Health Model Training",
     "imageSrc": "projects/mental-health.png",
-    "description": "Machine learning project training models on mental health datasets. Implements data preprocessing, model training, and evaluation for predictive mental health analytics.",
+    "description": "Machine learning project focused on training and evaluating models using publicly available mental health datasets. Includes data preprocessing, exploratory analysis, and model evaluation for academic learning purposes.",
     "skills": ["Python", "Jupyter", "Machine Learning", "Pandas"],
     "demo": "https://mental-health-model-training-fgqtqv6kvfdykrgzjyptiu.streamlit.app/",
-    "source": "https://github.com/tharushi1019/Mental-Health-Model-Training"
+    "source": "https://github.com/tharushi1019/Mental-Health-Model-Training",
+    "featured": false
   },
   {
     "title": "Academic Risk Prediction System",
     "imageSrc": "projects/academic-risk.png",
-    "description": "ML-powered system predicting academic performance risks using XGBoost and Random Forest. Features SHAP and LIME for model explainability and insights.",
+    "description": "Academic performance risk prediction system developed using machine learning models such as XGBoost and Random Forest. Incorporates SHAP and LIME techniques to improve model explainability and understanding.",
     "skills": ["Python", "XGBoost", "SHAP", "LIME", "Scikit-learn"],
     "demo": "https://25xpanhzgvp4rapp9pzhm6r.streamlit.app/",
-    "source": "https://github.com/tharushi1019/Machine-Learning-for-Academic-Risk-Prediction"
+    "source": "https://github.com/tharushi1019/Machine-Learning-for-Academic-Risk-Prediction",
+    "featured": true
   },
   {
     "title": "HerVoice - Safety App",
     "imageSrc": "projects/hervoice.png",
-    "description": "Mobile safety application supporting UN SDG 5 (Gender Equality). Features emergency alerts, live location tracking, SMS notifications, and secure Firebase authentication.",
+    "description": "Mobile safety application developed to support UN SDG 5 (Gender Equality). Includes emergency alerts, live location sharing, SMS notifications, and Firebase-based authentication.",
     "skills": ["Java", "Android Studio", "Firebase", "Real-time DB"],
     "demo": "https://youtu.be/H2vpi3nhKIs",
-    "source": "https://github.com/tharushi1019/HerVoice"
+    "source": "https://github.com/tharushi1019/HerVoice",
+    "featured": false
   },
   {
     "title": "Oven Crust Bakery System",
@@ -45,7 +50,8 @@
     "description": "Complete bakery management system with website, admin panel, product catalog, and order tracking. Features CRUD operations and user authentication.",
     "skills": ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
     "demo": "https://youtu.be/2rAPrxtL0Sg",
-    "source": "https://github.com/tharushi1019/Bakery-Shop-Web"
+    "source": "https://github.com/tharushi1019/Bakery-Shop-Web",
+    "featured": false
   },
   {
       "title": "Lesson Planner System - Java",
@@ -53,7 +59,8 @@
       "description": "A Java-based lesson planner system using MVC architecture and MySQL. The system features a user login interface, lesson management, teacher management, and CRUD functionalities.",
       "skills": ["Java", "MySQL", "Swing", "MVC"],
       "demo": "https://youtu.be/SFTkt60iBoQ?si=vV6z-O1GXgtfQLVO",
-      "source": "https://github.com/tharushi1019/ITBIN-2211-0202"
+      "source": "https://github.com/tharushi1019/ITBIN-2211-0202",
+      "featured": false
   },
 {
       "title": "Daily Mirror Website Redesign (Group)",
@@ -61,6 +68,7 @@
       "description": "A redesign of the Daily Mirror website focusing on improving UI/UX design, navigation, and user interaction. Implemented a modern, user-friendly layout while enhancing the responsiveness of the website.",
       "skills": ["UI/UX Design", "Figma", "User Personas", "Wireframing"],
       "demo": "https://drive.google.com/file/d/1shw4XGK8OqtAKoWu3tQ1TEPkIoLDo79t/view?usp=sharing",
-      "source": "https://www.figma.com/design/dR8owZfqFdsR9pYQPl5dDr/Redesign-DailyMirror.lk-Website?node-id=0-1&t=OfUL343zn0vdwUa1-1"
+      "source": "https://www.figma.com/design/dR8owZfqFdsR9pYQPl5dDr/Redesign-DailyMirror.lk-Website?node-id=0-1&t=OfUL343zn0vdwUa1-1",
+      "featured": false
   }
 ]

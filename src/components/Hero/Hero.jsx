@@ -19,7 +19,7 @@ const Hero = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const roles = ["Full-Stack Developer", "AI/ML Enthusiast", "UI/UX Designer"];
+  const roles = ["IT Undergraduate", "Full-Stack Web Developer", "AI-Driven Project Builder"];
   const [currentRole, setCurrentRole] = useState(0);
 
   useEffect(() => {
@@ -61,14 +61,17 @@ const Hero = () => {
         </div>
         
         <p className={styles.description}>
-          Passionate about building <span className={styles.highlight}>AI-powered solutions</span> and 
-          beautiful web experiences. Currently crafting <span className={styles.highlight}>BrandyBot</span> – 
-          an intelligent branding toolkit. Let's transform ideas into reality.
+          IT undergraduate with hands-on experience building 
+          <span className={styles.highlight}> full-stack and AI-driven web applications</span>.
+          Currently developing <span className={styles.highlight}>BrandyBot</span>, 
+          an AI-powered branding toolkit as a major academic project. 
+          Actively seeking internship and junior-level opportunities.
         </p>
+
         
         <div className={styles.ctaContainer}>
           <a href="mailto:tharushinimnadi.k@gmail.com" className={styles.primaryBtn}>
-            <span className={styles.btnText}>Let's Connect</span>
+            <span className={styles.btnText}>Contact Me</span>
             <svg className={styles.btnIcon} width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
@@ -102,12 +105,12 @@ const Hero = () => {
           <div className={styles.imageGlow}></div>
           <img 
             src="/My-Portfolio/assets/hero/heroImage1.png"
-            alt="Tharushi Nimnadi - Full Stack Developer" 
+            alt="Tharushi Nimnadi - IT Undergraduate and Full-Stack Web Developer" 
             className={styles.heroImg}
           />
           <div className={styles.floatingBadge}>
             <span className={styles.statusDot}></span>
-            <span>Available for opportunities</span>
+            <span>Open to Internships & Junior Roles</span>
           </div>
         </div>
       </div>

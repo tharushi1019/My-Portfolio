@@ -36,7 +36,7 @@ export const About = () => {
         <h2 className={styles.title}>About Me</h2>
         <div className={styles.titleUnderline}></div>
         <p className={styles.subtitle}>
-          A passionate developer dedicated to creating innovative solutions and exceptional user experiences
+          An IT undergraduate with hands-on experience in full-stack and AI-driven application development
         </p>
       </div>
 
@@ -73,8 +73,8 @@ export const About = () => {
           <div className={styles.statIcon}>📜</div>
           <div className={styles.statContent}>
             <h3>Certifications</h3>
-            <p>10+ Courses</p>
-            <span>Verified Skills</span>
+            <p>10+ Certifications</p>
+            <span>AI, Web & Systems</span>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ export const About = () => {
         <div className={styles.bioImage}>
           <img 
             src={getImageUrl("about/aboutImage1.png")} 
-            alt="Tharushi Nimnadi working" 
+            alt="Tharushi Nimnadi - IT undergraduate and full-stack web developer" 
             className={styles.aboutImage}
           />
           <div className={styles.imageGlow}></div>
@@ -92,33 +92,34 @@ export const About = () => {
         <div className={styles.bioContent}>
           <h3 className={styles.bioTitle}>Who I Am</h3>
           <p className={styles.bioText}>
-            I'm a <span className={styles.highlight}>passionate full-stack developer</span> and third-year IT undergraduate 
-            specializing in creating innovative solutions that blend <span className={styles.highlight}>cutting-edge technology</span> with 
-            exceptional user experiences.
+            I'm an IT undergraduate with hands-on experience in <span className={styles.highlight}>full-stack 
+            web development</span> ,  focused on building  
+            <span className={styles.highlight}> practical and user-friendly</span> applications using modern 
+            technologies.
           </p>
           <p className={styles.bioText}>
-            Currently working on <span className={styles.highlight}>BrandyBot</span>, an AI-powered branding toolkit that 
-            combines machine learning with creative design. I thrive on turning complex problems into elegant, 
-            user-friendly applications.
+            I am currently developing <span className={styles.highlight}>BrandyBot</span>, an AI-powered branding
+            toolkit as part of my academic and personal project work, integrating machine learning 
+            concepts with modern web development practices.
           </p>
           <div className={styles.bioHighlights}>
             <div className={styles.bioHighlight}>
               <svg className={styles.checkIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M20 6L9 17L4 12"/>
               </svg>
-              <span>Final-year IT Student at Horizon Campus</span>
+              <span>BSc (Hons) IT Undergraduate at Horizon Campus</span>
             </div>
             <div className={styles.bioHighlight}>
               <svg className={styles.checkIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M20 6L9 17L4 12"/>
               </svg>
-              <span>Specializing in React, Node.js & AI/ML Integration</span>
+              <span>Hands-on experience with React, Node.js & AI-driven features</span>
             </div>
             <div className={styles.bioHighlight}>
               <svg className={styles.checkIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M20 6L9 17L4 12"/>
               </svg>
-              <span>Open to opportunities and collaborations</span>
+              <span>Actively seeking internship and junior-level opportunities</span>
             </div>
           </div>
         </div>

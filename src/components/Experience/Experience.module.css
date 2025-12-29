@@ -434,6 +434,14 @@
     text-transform: uppercase;
 }
 
+.certNote {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  opacity: 0.85;
+}
+
 /* Stats Row */
 .statsRow {
     display: grid;
