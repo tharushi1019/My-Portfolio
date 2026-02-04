@@ -19,7 +19,11 @@ const Hero = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const roles = ["IT Undergraduate", "Full-Stack Web Developer", "AI-Driven Project Builder"];
+  const roles = [
+    "SE Undergraduate",
+    "Software Engineer (Web)",
+    "Full-Stack Web Developer"
+  ];
   const [currentRole, setCurrentRole] = useState(0);
 
   useEffect(() => {
@@ -61,14 +65,14 @@ const Hero = () => {
         </div>
         
         <p className={styles.description}>
-          IT undergraduate with hands-on experience building 
-          <span className={styles.highlight}> full-stack and AI-driven web applications</span>.
-          Currently developing <span className={styles.highlight}>BrandyBot</span>, 
-          an AI-powered branding toolkit as a major academic project. 
-          Actively seeking internship and junior-level opportunities.
+          Software Engineering undergraduate with hands-on experience building
+          <span className={styles.highlight}> modern web applications</span> using React,
+          Node.js, and REST APIs. Currently developing
+          <span className={styles.highlight}> BrandyBot</span>, a full-stack web application
+          with AI-assisted features as a final-year project.
+          Actively seeking <span className={styles.highlight}>Software Engineer Intern</span> opportunities.
         </p>
 
-        
         <div className={styles.ctaContainer}>
           <a href="mailto:tharushinimnadi.k@gmail.com" className={styles.primaryBtn}>
             <span className={styles.btnText}>Contact Me</span>
@@ -84,7 +88,6 @@ const Hero = () => {
           >
             <span className={styles.btnText}>Download CV</span>
           </a>
-          
         </div>
 
         <div className={styles.socialLinks}>
@@ -110,12 +113,12 @@ const Hero = () => {
           <div className={styles.imageGlow}></div>
           <img 
             src="/My-Portfolio/assets/hero/heroImage1.png"
-            alt="Tharushi Nimnadi - IT Undergraduate and Full-Stack Web Developer" 
+            alt="Tharushi Nimnadi - Software Engineering Undergraduate" 
             className={styles.heroImg}
           />
           <div className={styles.floatingBadge}>
             <span className={styles.statusDot}></span>
-            <span>Open to Internships & Junior Roles</span>
+            <span>Open to Software Engineer Internships</span>
           </div>
         </div>
       </div>

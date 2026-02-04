@@ -36,7 +36,7 @@ export const About = () => {
         <h2 className={styles.title}>About Me</h2>
         <div className={styles.titleUnderline}></div>
         <p className={styles.subtitle}>
-          An IT undergraduate with hands-on experience in full-stack and AI-driven application development
+          Software Engineering undergraduate with hands-on experience building real-world web applications
         </p>
       </div>
 
@@ -65,7 +65,7 @@ export const About = () => {
           <div className={styles.statContent}>
             <h3>Projects</h3>
             <p>8+ Completed</p>
-            <span>Full-Stack & AI</span>
+            <span>Web & Full-Stack</span>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ export const About = () => {
           <div className={styles.statContent}>
             <h3>Certifications</h3>
             <p>10+ Certifications</p>
-            <span>AI, Web & Systems</span>
+            <span>Web, AI & Systems</span>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ export const About = () => {
         <div className={styles.bioImage}>
           <img 
             src={getImageUrl("about/aboutImage1.png")} 
-            alt="Tharushi Nimnadi - IT undergraduate and full-stack web developer" 
+            alt="Tharushi Nimnadi - Software Engineering undergraduate" 
             className={styles.aboutImage}
           />
           <div className={styles.imageGlow}></div>
@@ -92,15 +92,15 @@ export const About = () => {
         <div className={styles.bioContent}>
           <h3 className={styles.bioTitle}>Who I Am</h3>
           <p className={styles.bioText}>
-            I'm an IT undergraduate with hands-on experience in <span className={styles.highlight}>full-stack 
-            web development</span> ,  focused on building  
-            <span className={styles.highlight}> practical and user-friendly</span> applications using modern 
+            I'm a Software Engineering undergraduate with hands-on experience in 
+            <span className={styles.highlight}> web application development</span>, focused on building
+            <span className={styles.highlight}> practical and user-friendly</span> solutions using modern
             technologies.
           </p>
           <p className={styles.bioText}>
-            I am currently developing <span className={styles.highlight}>BrandyBot</span>, an AI-powered branding
-            toolkit as part of my academic and personal project work, integrating machine learning 
-            concepts with modern web development practices.
+            I am currently developing <span className={styles.highlight}>BrandyBot</span>, a full-stack web
+            application with AI-assisted features, as my final-year project. The system focuses on real-world
+            product development concepts such as user workflows, dashboards, and scalable architecture.
           </p>
           <div className={styles.bioHighlights}>
             <div className={styles.bioHighlight}>
@@ -113,13 +113,13 @@ export const About = () => {
               <svg className={styles.checkIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M20 6L9 17L4 12"/>
               </svg>
-              <span>Hands-on experience with React, Node.js & AI-driven features</span>
+              <span>Hands-on experience with React, Node.js, REST APIs & modern web development</span>
             </div>
             <div className={styles.bioHighlight}>
               <svg className={styles.checkIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M20 6L9 17L4 12"/>
               </svg>
-              <span>Actively seeking internship and junior-level opportunities</span>
+              <span>Actively seeking Software Engineer Intern opportunities</span>
             </div>
           </div>
         </div>
